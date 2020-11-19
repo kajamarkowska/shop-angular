@@ -1,0 +1,5 @@
+<form [formGroup]= 'productForm'>
+    <formly-form [fields] = 'productFields' [form]= 'productForm'></formly-form>
+    <button mat-raised-button color="warn" [disabled] = '!productForm.valid' (click)='save()' >Add product</button>
+    
+</form>

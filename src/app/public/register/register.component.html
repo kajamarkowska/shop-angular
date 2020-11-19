@@ -1,0 +1,4 @@
+<form [formGroup] = 'registerForm' >
+    <formly-form [fields] = 'registerFields' [form]= 'registerForm'></formly-form>
+    <button mat-raised-button color="warn" [disabled] = '!registerForm.valid' (click)='register()' >register</button>
+</form>

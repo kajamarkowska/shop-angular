@@ -1,0 +1,5 @@
+<form [formGroup]= 'loginForm'>
+    <formly-form [fields] = 'loginFields' [form]= 'loginForm'></formly-form>
+    <button mat-raised-button color="warn" [disabled] = '!loginForm.valid' (click)='login()' >Warn</button>
+    
+</form>
